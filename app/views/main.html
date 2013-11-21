@@ -1,0 +1,49 @@
+<div>
+    <fieldset>
+        <h2>
+            Current Temperature</h2>
+
+        <div class="setting">
+            <span class="settinglabel">Time</span> <span class="settingfield" id="timeOfReading"
+                                                         ng-bind="sensorData.timeOfReading"></span>
+        </div>
+        <div class="setting">
+            <span class="settinglabel">Set Temperature Fahrenheit</span> <span class="settingfield"
+                                                                               id="sensorMilliVolts"
+                                                                               ng-bind="sensorData.setTemperature"></span>
+        </div>
+        <div class="setting">
+            <span class="settinglabel">Degrees Fahrenheit</span> <span class="settingfield" id="tempFahrenheit"
+                                                                       ng-bind="sensorData.temperatureFahrenheit"></span>
+        </div>
+        <div class="setting">
+            <span class="settinglabel">Heating</span> <span class="settingfield" id="isHeating"
+                                                            ng-bind="sensorData.isHeating">
+                    </span>
+        </div>
+        <div class="setting">
+            <span class="settinglabel">Current Mash Step</span> <span class="settingfield" id="mashStep"
+                                                                      ng-bind="sensorData.currentMashStep"></span>
+        </div>
+        <div class="setting">
+            <span class="settinglabel">Current Mash Temp Setting</span> <span class="settingfield"
+                                                                              id="mashTemp"
+                                                                              ng-bind="sensorData.currentMashTemp"></span>
+        </div>
+        <div class="setting">
+            <span class="settinglabel">Current Mash Time</span> <span class="settingfield" id="mashTime"
+                                                                      ng-bind="sensorData.currentMashTime"></span>
+        </div>
+        <div class="setting">
+            <span class="settinglabel">PID Output</span> <span class="settingfield" id="pidOutput"
+                                                               ng-bind="sensorData.pidOutput"></span>
+        </div>
+        <div class="clear">
+            &nbsp;</div>
+        <div class="btn btn-primary" id="refreshCurrentReading" ng-click="updateCurrentTemp()">
+            Update Reading
+        </div>
+        <div class="clear">
+            &nbsp;</div>
+    </fieldset>
+</div>

@@ -1,0 +1,17 @@
+<div id="profile">
+    <fieldset>
+        <h2>
+            Mash Profile</h2>
+        <div class="setting" ng-repeat="step in profileSteps">
+            <div mashstep="step"></div>
+        </div>
+        <div class="clear">
+            &nbsp;</div>
+        <div class="btn btn-primary" id="addMashStep" ng-click="addItem()">
+            Add Step</div>
+        <div class="btn btn-primary" id="updateMashProfile" ng-click="updateMashProfile()">
+            Update Profile</div>
+        <div class="clear">
+            &nbsp;</div>
+    </fieldset>
+</div>

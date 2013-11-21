@@ -1,0 +1,54 @@
+<div id="probe">
+    <fieldset>
+        <h2>
+            Temperature Probe Settings</h2>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="temperatureOffset">
+                            Temperature offset</label></span> <span class="settingfield">
+                                <input id="temperatureOffset" type="text" ng-model="settings..temperatureOffset" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="padResistance">
+                            Pad Resistance</label></span> <span class="settingfield">
+                                <input id="padResistance" type="text" ng-model="settings.padResistance" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="resistanceRT">
+                            Resistance RT</label></span> <span class="settingfield">
+                                <input id="resistanceRT" type="text" ng-model="settings.resistanceRT" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="coefficientA">
+                            Coefficient A</label></span> <span class="settingfield">
+                                <input id="coefficientA" type="text" ng-model="settings.coefficientA" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="coefficientB">
+                            Coefficient B</label></span> <span class="settingfield">
+                                <input id="coefficientB" type="text" ng-model="settings.coefficientB" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="coefficientC">
+                            Coefficient C</label></span> <span class="settingfield">
+                                <input id="coefficientC" type="text" ng-model="settings.coefficientC" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="coefficientD">
+                            Coefficient D</label></span> <span class="settingfield">
+                                <input id="coefficientD" type="text" ng-model="settings.coefficientD" /></span>
+        </div>
+        <div class="clear">
+            &nbsp;</div>
+        <div class="setting">
+            <div class="btn btn-primary" id="updateProbeSettings" ng-bind="updateSettings()">
+                Update</div>
+        </div>
+    </fieldset>
+</div>

@@ -1,0 +1,30 @@
+<div id="pid">
+    <fieldset>
+        <h2>
+            PID Settings</h2>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="KPValue">
+                            P</label></span> <span class="settingfield">
+                                <input id="KPValue" type="text" ng-model="settings.kpValue" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="KIValue">
+                            I</label></span> <span class="settingfield">
+                                <input id="KIValue" type="text" ng-model="settings.kiValue" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="KDValue">
+                            D</label></span> <span class="settingfield">
+                                <input id="KDValue" type="text" ng-model="settings.kdValue" /></span>
+        </div>
+        <div class="clear">
+            &nbsp;</div>
+        <div class="setting">
+            <div class="btn btn-primary" id="Div2" ng-click="updateSettings()">
+                Update</div>
+        </div>
+    </fieldset>
+</div>

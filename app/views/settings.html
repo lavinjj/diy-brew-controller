@@ -1,0 +1,88 @@
+<div id="settings">
+    <fieldset>
+        <h2>
+            Recording Settings</h2>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="minutesBetweenReadings">
+                            Minutes between readings</label></span> <span class="settingfield">
+                                <input id="minutesBetweenReadings" type="text" ng-model="settings.minutesBetweenReadings" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="historyFilename">
+                            History file name</label></span> <span class="settingfield">
+                                <input id="historyFilename" type="text" ng-model="settings.historyFilename" /></span>
+        </div>
+        <h2>
+            Time Settings</h2>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="ntpServerName">
+                            NTP Server Name</label></span> <span class="settingfield">
+                                <input id="ntpServerName" type="text" ng-model="settings.ntpServerName" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="minutesBetweenNTPUpdate">
+                            Minutes between time updates</label></span> <span class="settingfield">
+                                <input id="minutesBetweenNTPUpdate" type="text" ng-model="settings.minutesBetweenNTPUpdate" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="timeZoneOffset">
+                            Time Zone offset in minutes</label></span> <span class="settingfield">
+                                <input id="timeZoneOffset" type="text" ng-model="settings.timeZoneOffset" /></span>
+        </div>
+        <h2>
+            Network Settings</h2>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="netbiosName">
+                            NETBIOS Name</label></span> <span class="settingfield">
+                                <input id="netbiosName" type="text" ng-model="settings.netbiosName" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="enableDHCP">
+                            Enable DHCP</label></span> <span class="settingfield">
+                                <input id="enableDHCP" type="checkbox" data-bind="checked: settings().enableDHCP" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="staticIPAddress">
+                            Static IP Address</label></span> <span class="settingfield">
+                                <input id="staticIPAddress" type="text" ng-model="settings.staticIPAddress" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="subnetMask">
+                            Subnet Mask</label></span> <span class="settingfield">
+                                <input id="subnetMask" type="text" ng-model="settings.subnetMask" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="defaultGateway">
+                            Default Gateway</label></span> <span class="settingfield">
+                                <input id="defaultGateway" type="text" ng-model="settings.defaultGateway" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="primaryDNSAddress">
+                            Primary DNS Address</label></span> <span class="settingfield">
+                                <input id="primaryDNSAddress" type="text" ng-model="settings.primaryDNSAddress" /></span>
+        </div>
+        <div class="setting">
+                    <span class="settinglabel">
+                        <label for="secondaryDNSAddress">
+                            Secondary DNS Address</label></span> <span class="settingfield">
+                                <input id="secondaryDNSAddress" type="text" ng-model="settings.secondaryDNSAddress" /></span>
+        </div>
+        <div class="clear">
+            &nbsp;</div>
+        <div class="setting">
+            <div class="btn btn-primary" id="updateSettings" ng-click="updateSettings()">
+                Update</div>
+        </div>
+    </fieldset>
+</div>
