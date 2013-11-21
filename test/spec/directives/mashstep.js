@@ -10,13 +10,13 @@ describe('Directive: mashstep', function () {
 
     beforeEach(inject(function ($rootScope) {
         scope = $rootScope.$new();
-        scope.step = {mashTemperature: 120, mashStepLength: 20};
     }));
 
     it('should populate the element with the step values', inject(function ($compile) {
-        element = angular.element('<mashstep step="{step}"></mashstep>');
+        scope.step = {mashTemperature: 120, mashStepLength: 20};
+        element = angular.element('<mashstep data-step="step"></mashstep>');
         element = $compile(element)(scope);
-        expect(element.text()).toContain('120');
-        expect(element.text()).toContain('20');
+        expect(element.html()).toContain('120');
+        expect(element.html()).toContain('20');
     }));
 });

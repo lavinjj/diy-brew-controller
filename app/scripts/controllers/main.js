@@ -5,11 +5,15 @@ angular.module('diyBrewControllerApp')
         $scope.sensorData = null;
 
         $scope.updateCurrentTemp = function() {
-            $scope.sensorData =ControllerApi.getStatus();
+            ControllerApi.getStatus().then(function(response){
+                $scope.sensorData = response.data;
+            });
         };
 
         $scope.init = function() {
-            $scope.sensorData =ControllerApi.getStatus();
+            ControllerApi.getStatus().then(function(response){
+                $scope.sensorData = response.data;
+            });
         };
 
         $scope.init();

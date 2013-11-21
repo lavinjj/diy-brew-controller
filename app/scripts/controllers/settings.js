@@ -9,7 +9,9 @@ angular.module('diyBrewControllerApp')
         };
 
         $scope.init = function () {
-            $scope.settings = ControllerApi.getSettings();
+            ControllerApi.getSettings().then(function(response){
+                $scope.settings = response.data;
+            });
         };
 
         $scope.init();
